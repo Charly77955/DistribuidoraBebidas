@@ -10,3 +10,7 @@ root.render(
     <App />
   </React.StrictMode>
 );
+<<<<<<< HEAD
+=======
+
+>>>>>>> 8e1ae6c (2do commit c/firebase)
