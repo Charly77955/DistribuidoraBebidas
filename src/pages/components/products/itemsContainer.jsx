@@ -4,6 +4,7 @@ import { db } from "../firebase/firebaseConfig";
 import { collection, getDocs } from "firebase/firestore";
 import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
+import "../products/productosStyles.css";
 
 export default function ItemsContainer() {
   const [productos, setProductos] = useState([]);
@@ -23,8 +24,8 @@ export default function ItemsContainer() {
     <div className="d-flex">
       <>
         {productos.map((item, i) => (
-          <div key={i}>
-            <Card style={{ width: "10rem" }}>
+          <div  key={i} className="productosCards">
+            <Card style={{ width: 150, height: 150 }}>
               <Card.Img variant="top" src={item.imagen} />
               <Card.Body>
                 <Card.Title>{item.nombre}</Card.Title>
