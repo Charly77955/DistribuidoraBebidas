@@ -4,7 +4,7 @@ import { db } from "../firebase/firebaseConfig";
 import { collection, getDocs } from "firebase/firestore";
 import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
-import "../products/productosStyles.css";
+import "./productosStyles.css";
 
 export default function ItemsContainer() {
   const [productos, setProductos] = useState([]);

@@ -2,15 +2,22 @@
 import './App.css';
 import NavBar from './pages/components/navbar/navbar';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import AllProducts from './pages/components/products/allProducts';
+import Products from './pages/screens/products/Products';
+import { BrowserRouter, Route, Router, Routes } from 'react-router-dom';
+import Inicio from './pages/screens/main/inicio';
 
 function App() {
   return (
     <div className="App">
-      <>
+      
+       <Router>
+      <Routes>
       <NavBar/>
-      <AllProducts/>
-      </>
+      <Inicio/>
+        <Route path='/Productos'/><Products/><Route/>
+        </Routes>
+       </Router>
+      
     </div>
   );
 }

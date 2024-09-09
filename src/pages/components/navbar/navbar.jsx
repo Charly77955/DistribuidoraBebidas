@@ -3,13 +3,22 @@ import Container from 'react-bootstrap/Container';
 import Form from 'react-bootstrap/Form';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import NavDropdown from 'react-bootstrap/NavDropdown';
 import './navbarStyles.css';
+import { Link } from 'react-router-dom';
 
 
+// const links = [{
+//   name: "Productos",
+//   href: "/productos",
+// },
+// {
+//   name: "Contact",
+//   href: "/Contact",
+// },
+// ];
 export default function NavBar() {
   return (
-    <div className='navbar-container'>    
+    <div className='navbar-container'>  
     <Navbar expand="lg" className="bg-body-tertiary" data-bs-theme="dark">
       <Container fluid>
         <Navbar.Brand href="#">Distribuidora</Navbar.Brand>
@@ -20,8 +29,8 @@ export default function NavBar() {
             style={{ maxHeight: '500px' }}
             navbarScroll
           >
-            <Nav.Link href="#action1">Productos</Nav.Link>
-            <Nav.Link href="#action2">Contact</Nav.Link>
+            <Link  to="/Products">Productos</Link>
+            <Link to="/Contact">Contact</Link>
             {/* <NavDropdown title="Cuenta" id="navbarScrollingDropdown">
               <NavDropdown.Item href="#action3">Action</NavDropdown.Item>
               <NavDropdown.Item href="#action4">
