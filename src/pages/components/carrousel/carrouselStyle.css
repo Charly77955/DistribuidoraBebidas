@@ -1,0 +1,9 @@
+.carousel{
+    width: 300;
+    height: 300;
+    margin: 'auto';
+}
+.carousel-slide{
+    width: 100%; 
+    height: 100%;
+}

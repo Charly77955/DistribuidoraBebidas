@@ -1,35 +1,36 @@
-import React, {useState,useEffect} from 'react'
+import React, { useState, useEffect } from 'react';
 import { db } from '../../components/firebase/firebaseConfig';
-import OwlCarousel from 'react-owl-carousel';
+import { collection, getDocs } from "firebase/firestore";
+import Carousel from 'react-bootstrap/Carousel';
+import './carrouselStyle.css';
 
 export default function Carrousel() {
-    const [elements, setElements] = useState([]);
+  const [elements, setElements] = useState([]);
 
   useEffect(() => {
-    db.collection('promociones').get().then(querySnapshot => {
-      const elements = querySnapshot.docs.map(doc => doc.data());
-      setElements(elements);
+    const productosRef = collection(db, "promociones");
+    getDocs(productosRef).then((resp) => {
+      setElements(
+        resp.docs.map((doc) => {
+          return { ...doc.data(), id: doc.id };
+        })
+      );
     });
   }, []);
 
   return (
-    <div>
-    <OwlCarousel
-      className="owl-theme"
-      loop={true}
-      margin={10}
-      nav={true}
-      items={7}
-    >
-      {elements.map((element, index) => (
-        <div key={index} className="item">
-          <h2>{element.nombre}</h2>
-          <p>{element.precio}</p>
-          <img src={element.imagen} alt=""/>
-        </div>
+    <div className='carousel'>
+    <Carousel className='carousel-slide'>
+      {elements.map((item, i) => (
+        <Carousel.Item key={i} interval={1000}>
+          <img src={item.imagen} alt={item.altText} />
+          <Carousel.Caption>
+            <h3>{item.nombre}</h3>
+            <p>{item.precio}</p>
+          </Carousel.Caption>
+        </Carousel.Item>
       ))}
-    </OwlCarousel>
+    </Carousel>
     </div>
   );
-  
 }

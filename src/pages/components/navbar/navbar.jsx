@@ -5,7 +5,7 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import './navbarStyles.css';
 import { Link } from 'react-router-dom';
-
+import  Products  from "../../screens/products/Products";
 
 // const links = [{
 //   name: "Productos",
@@ -21,7 +21,7 @@ export default function NavBar() {
     <div className='navbar-container'>  
     <Navbar expand="lg" className="bg-body-tertiary" data-bs-theme="dark">
       <Container fluid>
-        <Navbar.Brand href="#">Distribuidora</Navbar.Brand>
+        <Navbar.Brand href="#"><Link   to="/">Distribuidora</Link></Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">
           <Nav
@@ -29,15 +29,8 @@ export default function NavBar() {
             style={{ maxHeight: '500px' }}
             navbarScroll
           >
-            <Link  to="/Products">Productos</Link>
-            <Link to="/Contact">Contact</Link>
-            {/* <NavDropdown title="Cuenta" id="navbarScrollingDropdown">
-              <NavDropdown.Item href="#action3">Action</NavDropdown.Item>
-              <NavDropdown.Item href="#action4">
-                Another action
-              </NavDropdown.Item>
-              <NavDropdown.Divider />
-            </NavDropdown> */}
+            <Nav.Link><Link   to="/productos">Productos</Link></Nav.Link>
+            <Nav.Link><Link to="/contact">Contact</Link></Nav.Link>
           </Nav>
           <Form className="d-flex">
             <Form.Control
