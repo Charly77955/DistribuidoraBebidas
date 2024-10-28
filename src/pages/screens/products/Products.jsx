@@ -6,7 +6,6 @@ function Products() {
   return (
     
     <div class="flex-container">
-   <div class="Filters-container">Filters</div>
    <div class="Items-container">
     <div className="Items"><ItemsContainer />
     </div></div>

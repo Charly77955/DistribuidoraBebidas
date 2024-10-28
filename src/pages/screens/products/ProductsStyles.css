@@ -16,13 +16,6 @@
   border-radius: 5px;
   padding: 8px;
 }
-
-.Filters-container { 
-  order:0;
-  flex-grow:0;
-  flex-shrink:1;
-  width: 20%;
-}
 .Items-container { 
     
   order:1;
