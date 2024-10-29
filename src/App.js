@@ -10,16 +10,16 @@ function App() {
   return (
     <div className="App">
       <>
-      <div className="parent">
-        
-        <div className="div1"><Carrousel/></div>
-    <div className="div2"><Products/></div>
-    <div className="div3">Filters</div>
-    <div className="div4">4</div>
-       </div>
-       </>
+        <div className="container">
+          <div className="cajas carousel">
+            carousel
+          </div>
+          <div className="cajas productos">Productos</div>
+          <div className="cajas filters">Filters</div>
+          <div className="cajas footer">footer</div>
         </div>
-        
+      </>
+    </div>
   );
 }
 
