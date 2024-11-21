@@ -11,12 +11,14 @@ function App() {
     <div className="App">
       <>
         <div className="container">
-          <div className="cajas carousel">
+          <div className="carousel">
             carousel
           </div>
-          <div className="cajas productos">Productos</div>
-          <div className="cajas filters">Filters</div>
-          <div className="cajas footer">footer</div>
+          <div className="content">
+          <div className="products">Productos</div>
+          <div className="filter">Filters</div>
+          </div>
+          <div className="footer">footer</div>
         </div>
       </>
     </div>

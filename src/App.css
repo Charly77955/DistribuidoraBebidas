@@ -1,11 +1,11 @@
-.App{
-  height: 1000px;
+.App {
+  height: 1500px;
   width: 100vw;
   background-color: grey;
   overflow: auto;
 }
 
-.container {
+/* .container {
   display: flex;
   gap: 15px;
   background-color: aqua;
@@ -33,4 +33,64 @@
 .productos{
   flex-basis: 300px;
   background-color: blue;
+} */
+.container {
+  display: flex;
+  flex-direction: column; /* Para apilar los divs verticalmente */
+  align-items: center;
+  margin: 0;
+  background-color: #f0f0f0;
+  height: 1500px;
+}
+.carousel {
+  width: 700px;
+  height: 500px;
+  background-color: #4caf50; /* Color del carrusel */
+  margin: 100px; /* Espacio debajo del carrusel */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  border-radius: 8px; /* Bordes redondeados */
+}
+.content {
+  display: flex;
+  width: 90%; /* Ancho del contenedor de productos y filtro */
+}
+.filter {
+  width: 200px; /* Ancho del filtro */
+  background-color: #2196f3; /* Color del filtro */
+  color: white;
+  border-radius: 10px; /* Bordes redondeados */
+  margin: 10px; /* Espacio interno */
+  
+}
+.products {
+  display: flex;
+  flex-wrap: wrap; /* Para que los productos se ajusten en varias filas */
+  gap: 10px; /* Espacio entre productos */
+  flex: 1; /* Ocupa el espacio restante */
+  background-color: #4caf50;
+  height: 900px;
+  margin: 10px; 
+  border-radius: 10px;
+}
+.product-card {
+  width: 200px; /* Ancho de cada tarjeta de producto */
+  height: 200px; /* Alto de cada tarjeta de producto */
+  background-color: #ff5722; /* Color de las tarjetas */
+  color: white;
+  border-radius: 8px; /* Bordes redondeados */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer {
+  width: 100%; /* Ancho del footer */
+  background-color: #333; /* Color del footer */
+  color: white;
+  height: 300px;
+  text-align: center;
+  padding: 50px; /* Espacio interno */
+  margin-top: 100px; /* Para que esté al final */
 }
