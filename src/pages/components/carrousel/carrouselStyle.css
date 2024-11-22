@@ -8,7 +8,7 @@
     height: 100%;
 }
 .carousel-slide img{
-    object-fit: cover;
-    width:800px;
-    height:500px;
+    object-fit: contain;
+    width: 700px;
+    height: 900px;
 }

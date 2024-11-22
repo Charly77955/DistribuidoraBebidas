@@ -12,17 +12,18 @@ function App() {
       <BrowserRouter>
     <div className="App">
       <>
-      
         <div className="container">
         <NavBar/>
+        <nav>
           <div className="carousel">
-            carousel
+            <Carrousel/>
           </div>
           <div className="content">
           <div className="products">Productos</div>
           <div className="filter">Filters</div>
           </div>
           <div className="footer">footer</div>
+        </nav>
         </div>
       </>
     </div>

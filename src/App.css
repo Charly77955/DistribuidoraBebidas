@@ -3,7 +3,7 @@
   height: 100%;
   width: 100%;
   background-color: rgb(110, 47, 47);
-  overflow: auto;
+  overflow: hidden;
 } 
 
 /* .container {
@@ -44,8 +44,8 @@
   height: 1500px;
 }
 .carousel {
-  width: 600px;
-  height: 600px;
+  width: 620px;
+  height: 900px;
   background-color: #4caf50; /* Color del carrusel */
   margin: 100px; /* Espacio debajo del carrusel */
   display: flex;
