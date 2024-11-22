@@ -1,9 +1,10 @@
-.App {
-  height: 1500px;
-  width: 100vw;
-  background-color: grey;
+
+ .App {
+  height: 100%;
+  width: 100%;
+  background-color: rgb(110, 47, 47);
   overflow: auto;
-}
+} 
 
 /* .container {
   display: flex;
@@ -39,12 +40,12 @@
   flex-direction: column; /* Para apilar los divs verticalmente */
   align-items: center;
   margin: 0;
-  background-color: #f0f0f0;
+  background-color: #9b8e8e;
   height: 1500px;
 }
 .carousel {
-  width: 700px;
-  height: 500px;
+  width: 600px;
+  height: 600px;
   background-color: #4caf50; /* Color del carrusel */
   margin: 100px; /* Espacio debajo del carrusel */
   display: flex;
@@ -59,6 +60,7 @@
 }
 .filter {
   width: 200px; /* Ancho del filtro */
+  height: 500px;
   background-color: #2196f3; /* Color del filtro */
   color: white;
   border-radius: 10px; /* Bordes redondeados */

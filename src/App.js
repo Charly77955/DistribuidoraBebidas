@@ -5,12 +5,16 @@ import Products from "./pages/screens/products/Products";
 
 import Inicio from "./pages/screens/main/inicio";
 import Carrousel from "./pages/components/carrousel/carrousel";
+import { BrowserRouter } from "react-router-dom";
 
 function App() {
   return (
+      <BrowserRouter>
     <div className="App">
       <>
+      
         <div className="container">
+        <NavBar/>
           <div className="carousel">
             carousel
           </div>
@@ -22,6 +26,7 @@ function App() {
         </div>
       </>
     </div>
+      </BrowserRouter>
   );
 }
 
