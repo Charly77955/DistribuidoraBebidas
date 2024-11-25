@@ -1,7 +1,8 @@
 
  .App {
-  height: 100%;
-  width: 100%;
+  width: 100vw; /* 50% del ancho de la ventana */
+ height: 600vh; /* 50% de la altura de la ventana */
+
   background-color: rgb(110, 47, 47);
   overflow: hidden;
 } 
@@ -41,7 +42,7 @@
   align-items: center;
   margin: 0;
   background-color: #9b8e8e;
-  height: 1500px;
+  height: 200vh;
 }
 .carousel {
   width: 620px;

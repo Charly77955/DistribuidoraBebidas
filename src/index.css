@@ -1,9 +1,9 @@
 body, html {
-  height: auto;
-  width: 100%;
+  width: 100vw; /* 50% del ancho de la ventana */
+  height: 100vh; /* 50% de la altura de la ventana */
   margin: 0;
   padding: 0;
-  background-color: blue;
+  
   box-sizing: border-box;
 }
 
