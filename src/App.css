@@ -1,7 +1,7 @@
 
  .App {
   width: 100vw; /* 50% del ancho de la ventana */
- height: 600vh; /* 50% de la altura de la ventana */
+ height: 435vh; /* 50% de la altura de la ventana */
 
   background-color: rgb(110, 47, 47);
   overflow: hidden;
@@ -42,12 +42,13 @@
   align-items: center;
   margin: 0;
   background-color: #9b8e8e;
-  height: 200vh;
+  height: 3000px;
+  position: relative;
 }
 .carousel {
   width: 620px;
   height: 900px;
-  background-color: #4caf50; /* Color del carrusel */
+  background-color: #9b8e8e; /* Color del carrusel */
   margin: 100px; /* Espacio debajo del carrusel */
   display: flex;
   justify-content: center;
@@ -58,6 +59,16 @@
 .content {
   display: flex;
   width: 90%; /* Ancho del contenedor de productos y filtro */
+  overflow: hidden;
+  flex-wrap: wrap;
+  margin: 200px 0px;
+
+}
+
+@media screen and (max-width: 700px){
+  .content{
+    display: inline-block;
+}
 }
 .filter {
   width: 200px; /* Ancho del filtro */
@@ -65,7 +76,9 @@
   background-color: #2196f3; /* Color del filtro */
   color: white;
   border-radius: 10px; /* Bordes redondeados */
-  margin: 10px; /* Espacio interno */
+  margin: 10px 0px; /* Espacio interno */
+  overflow: hidden;
+  flex-wrap: wrap;
   
 }
 .products {
@@ -77,6 +90,8 @@
   height: 900px;
   margin: 10px; 
   border-radius: 10px;
+  overflow: hidden;
+  flex-wrap: wrap;
 }
 .product-card {
   width: 200px; /* Ancho de cada tarjeta de producto */
