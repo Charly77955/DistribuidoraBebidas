@@ -5,17 +5,9 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import './navbarStyles.css';
 import { Link } from 'react-router-dom';
-import  Products  from "../../screens/products/Products";
 
-// const links = [{
-//   name: "Productos",
-//   href: "/productos",
-// },
-// {
-//   name: "Contact",
-//   href: "/Contact",
-// },
-// ];
+
+
 export default function NavBar() {
   return (
     <div className='navbar-container'>  
@@ -29,7 +21,7 @@ export default function NavBar() {
             style={{ maxHeight: '500px' }}
             navbarScroll
           >
-            <Nav.Link><Link   to="/productos">Productos</Link></Nav.Link>
+            <Nav.Link><Link   to="/listaproductos">Productos</Link></Nav.Link>
             <Nav.Link><Link to="/contact">Contact</Link></Nav.Link>
           </Nav>
           <Form className="d-flex">

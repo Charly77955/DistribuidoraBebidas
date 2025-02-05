@@ -6,7 +6,7 @@ import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
 import "./productosStyles.css";
 
-export default function ItemsContainer() {
+export default function ListaProductos() {
   const [productos, setProductos] = useState([]);
 
   useEffect(() => {
@@ -21,11 +21,11 @@ export default function ItemsContainer() {
   }, []);
 
   return (
-    <div className="d-flex">
+    <div className="productosCards">
       <>
         {productos.map((item, i) => (
-          <div  key={i} className="productosCards">
-            <Card style={{ width: 150, height: 150 }}>
+          <div  key={i} >
+            <Card style={{ width: 200, height: 200 }}>
               <Card.Img variant="top" src={item.imagen} />
               <Card.Body>
                 <Card.Title>{item.nombre}</Card.Title>
